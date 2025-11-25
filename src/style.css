@@ -1,0 +1,43 @@
+body {
+  background-color: #d5eeff;
+}
+
+footer {
+  text-align: center;
+}
+
+h1 {
+  text-align: left;
+  padding: 0 0 0 20px;
+}
+
+.container {
+  display: block;
+  margin: 60px auto;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  background-color: white;
+  padding: 5px;
+  height: 500px;
+  width: 400px;
+}
+
+.city-selection {
+  padding: 6px 230px 6px 6px;
+  border-radius: 5px;
+  border-color: lightgray;
+}
+
+.city {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.name-of-city {
+  text-align: left;
+  padding: 0 0 0 20px;
+}
+
+.time-of-city {
+  text-align: righ;
+}
