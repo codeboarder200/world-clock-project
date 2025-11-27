@@ -1,5 +1,6 @@
 body {
   background-color: #d5eeff;
+  font-family: "Times New Roman", Times, serif;
 }
 
 footer {
@@ -7,7 +8,6 @@ footer {
 }
 
 h1 {
-  text-align: left;
   padding: 0 0 0 20px;
 }
 
@@ -17,27 +17,43 @@ h1 {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   background-color: white;
-  padding: 5px;
-  height: 500px;
-  width: 400px;
+  padding: 12px 15px;
+  max-width: 400px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
 }
 
-.city-selection {
-  padding: 6px 230px 6px 6px;
+select {
+  width: 91%;
+  padding: 4px;
   border-radius: 5px;
   border-color: lightgray;
 }
 
 .city {
-  border-bottom: 1px solid lightgray;
-  padding-bottom: 10px;
-}
-
-.name-of-city {
-  text-align: left;
-  padding: 0 0 0 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 18px 16px -8px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
+  padding: 0 0 18px 0;
 }
 
 .time-of-city {
-  text-align: righ;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.meridiem-markers {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+h2 {
+  margin: 0;
+}
+
+.date-of-city {
+  opacity: 0.7;
+  margin-left: 28px;
 }
