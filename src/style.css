@@ -3,24 +3,20 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-footer {
-  text-align: center;
-}
-
-h1 {
-  padding: 0 0 0 20px;
-}
-
 .container {
   display: block;
   margin: 60px auto;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   background-color: white;
-  padding: 12px 15px;
+  padding: 8px 15px;
   max-width: 400px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 7px;
+}
+
+h1 {
+  padding: 0 0 0 20px;
 }
 
 select {
@@ -33,9 +29,13 @@ select {
 .city {
   display: flex;
   justify-content: space-between;
-  margin: 16px 18px 16px -8px;
+  margin: 16px 18px;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
   padding: 0 0 18px 0;
+}
+
+.city:last-child {
+  border: none;
 }
 
 .time-of-city {
@@ -56,4 +56,14 @@ h2 {
 .date-of-city {
   opacity: 0.7;
   margin-left: 28px;
+}
+
+.city-date {
+  margin-left: -25px;
+}
+
+footer {
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: -8px;
+  text-align: center;
 }
