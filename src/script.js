@@ -52,6 +52,7 @@ function updateCity(event) {
             <span class="meridiem-markers">${cityMarker}</span>
           </div>
         </div>
+        <a href="/" class="back-link">Back to all cities</a>
   `;
 }
 
