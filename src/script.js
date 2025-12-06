@@ -1,4 +1,34 @@
 function updateTime() {
+  let maseruElement = document.querySelector("#maseru");
+  if (maseruElement) {
+    let maseruDateElement = document.querySelector("#maseru-date");
+    let currentMaseruDate = moment().tz("Africa/MAseru").format("MMMM Do YYYY");
+    maseruDateElement.innerHTML = currentMaseruDate;
+
+    let maseruTimeElement = document.querySelector("#maseru-time");
+    let currentMaseruTime = moment().tz("Africa/Maseru").format("h:mm:ss");
+    maseruTimeElement.innerHTML = currentMaseruTime;
+
+    let maseruMarkerElement = document.querySelector("#maseru-marker");
+    let currentMaseruMarker = moment().tz("Africa/Maseru").format("A");
+    maseruMarkerElement.innerHTML = currentMaseruMarker;
+  }
+
+  let fijiElement = document.querySelector("#fiji");
+  if (fijiElement) {
+    let fijiDateElement = document.querySelector("#fiji-date");
+    let currentFijiDate = moment().tz("Pacific/Fiji").format("MMMM Do YYYY");
+    fijiDateElement.innerHTML = currentFijiDate;
+
+    let fijiTimeElement = document.querySelector("#fiji-time");
+    let currentFijiTime = moment().tz("Pacific/Fiji").format("h:mm:ss");
+    fijiTimeElement.innerHTML = currentFijiTime;
+
+    let fijiMarkerElement = document.querySelector("#fiji-marker");
+    let currentFijiMarker = moment().tz("Pacific/Fiji").format("A");
+    fijiMarkerElement.innerHTML = currentFijiMarker;
+  }
+
   let tokyoElement = document.querySelector("#tokyo");
   if (tokyoElement) {
     let tokyoDateElement = document.querySelector("#tokyo-date");
